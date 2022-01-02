@@ -26,10 +26,10 @@ def bag_contents(request):
                 total += quantity * product.price
                 product_count += quantity
                 bag_items.append({
-                'item_id': item_id,
-                'quantity': item_data,
-                'product': product,
-                'size': size,
+                    'item_id': item_id,
+                    'quantity': quantity,
+                    'product': product,
+                    'size': size,
                 })
 
     if total < settings.FREE_DELIVERY_THRESHOLD:
